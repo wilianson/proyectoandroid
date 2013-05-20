@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ControlCyberFormulario" >
+
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:padding="10dp" >
+
+	    <TextView
+	        android:id="@+id/label_nombre"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/label_nombre_hipoteca"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <EditText
+	        android:id="@+id/nombre"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/label_nombre"
+	        android:ems="10" />
+	
+	    <TextView
+	        android:id="@+id/label_condiciones"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/label_condiciones"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:layout_below="@+id/nombre"
+	        android:layout_marginTop="20dp" />
+	    
+	    <EditText
+	        android:id="@+id/condiciones"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/label_condiciones"
+	        android:ems="10"
+	        android:inputType="textMultiLine">
+	    </EditText>
+	    
+	    <TextView
+	        android:id="@+id/label_hora_ent"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/label_hora_ent"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:layout_below="@+id/condiciones"
+	        android:layout_marginTop="20dp" />
+	    
+	    <EditText
+	        android:id="@+id/hora_ent"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/label_hora_ent"
+	        android:ems="10">
+	    </EditText>
+	    
+	    <TextView
+	        android:id="@+id/label_hora_sal"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/label_hora_sal"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:layout_below="@+id/hora_ent"
+	        android:layout_marginTop="20dp" />
+	    
+	    <EditText
+	        android:id="@+id/hora_sal"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/label_hora_sal"
+	        android:ems="10"
+	        android:inputType="textMultiLine" >
+	    </EditText>
+	    
+	    <TextView
+	        android:id="@+id/label_acumulado"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/hora_sal"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/label_acumulado"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+	   <EditText
+	        android:id="@+id/acumulado"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/label_acumulado"
+	        android:ems="10"
+	        android:inputType="textMultiLine"/>
+    	
+	    
+	<LinearLayout
+        android:id="@+id/botonera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acumulado"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/boton_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/boton_cancelar" />
+
+        <Button
+            android:id="@+id/boton_guardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/boton_guardar" />
+
+    </LinearLayout>
+	    
+	</RelativeLayout>
+</ScrollView>
